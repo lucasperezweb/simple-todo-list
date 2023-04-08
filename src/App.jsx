@@ -9,7 +9,7 @@ export const App = () => {
         setTasks([...tasks, newTask])
         setNewTask('')
     }
-    // const tasks = ["Poner una lavadora", "Hacer de comer", "Hacer la compra", "Planchar la ropa"]
+
     return (<div className="app">
         <h1>TO DO LIST 📝</h1>
         <input className='newTask' type='textarea' value={newTask} placeholder="Escribe una tarea..." onChange={(event) => setNewTask(event.target.value)} />
